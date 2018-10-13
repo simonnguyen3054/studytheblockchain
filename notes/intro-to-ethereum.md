@@ -15,3 +15,19 @@ Anyone can interact with the smart contract. To call the method from the smart c
 Gas us a unit in ether needed to invoke a smart contract method, paid by the sender. Gas is needed to deal with turing completion (looping).
 
 Ethereum nodes parse and verify the blockchain, provide an interface to create transactions and mine blocks.
+
+Ethereum account contains four fields
+* The nonce, a counter used to make sure each transaction can only be processed once
+* The account's current ether balance
+* The account's contract code, if present
+* The account's storage (empty by default)
+
+There are two types of accounts: externally owned accounts, controlled by private keys, and contract accounts, controlled by their contract code.
+
+Transactions contains:
+* The recipient of the message
+* A signature identifying the sender
+* The amount of ether to transfer from the sender to the recipient
+* An optional data field
+* A STARTGAS value, representing the maximum number of computational steps the transaction execution is allowed to take
+* A GASPRICE value, representing the fee the sender pays per computational step

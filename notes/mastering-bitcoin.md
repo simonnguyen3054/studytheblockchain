@@ -7,3 +7,9 @@ Trasactions move value from trasaction inputs to trasaction outputs. An input tr
 How does wallet construct transaction offline?
 
 The bitcoin of trust is based on computation. The mining process serves two purpose in bitcoin. It validates transactions by reference to bitcoin's concesus rules and creates new bitcoin in each block.
+
+Building the Bitcoin Core Execuable
+s required me to edit these files mannually in order to run ```make``` successfully.
+https://github.com/litecoin-project/litecoin/commit/1ec0c0a01c316146434642ab2f14a7367306dbec
+
+Private Keys generates Public Keys and Public Keys generate Bitcoin Address using a one way function called Elliptic curve cryptography.
